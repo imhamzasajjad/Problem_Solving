@@ -6,10 +6,14 @@ lst=[]
 # How many elements a user want to enter in the list?
 element= int(input("Enter more Then 2 Element"))
 # For Loop for iteration
-for i in range(0, element):
-    ele = int(input("Enter the list element:"))
+if(element>2):
+    for i in range(0, element):
+        ele = int(input("Enter the list element:"))
 # Adding Elements into the list
-    lst.append(ele)
+        lst.append(ele)
+else:
+    print("you entered invalid")
+    exit()
 print("Your entered list is:", lst)
 
 # Sorting the list
